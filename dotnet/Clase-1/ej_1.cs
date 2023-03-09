@@ -109,3 +109,35 @@ Console.WriteLine(st=Console.ReadLine());?
 string st;
 Console.WriteLine(st=Console.ReadLine());
 */
+/*
+EJ 9: Escribir un programa que lea dos palabras separadas por un blanco que terminan con <ENTER>,
+y determinar si son simétricas (Ej: 'abbccd' y 'dccbba' son simétricas).
+Tip: si st es un string, entonces st[0] devuelve el primer carácter de st, y st[st.Length-1]
+devuelve el último carácter de st.
+*/
+String palabra_1;
+String palabra_2;
+bool iguales= true;
+int i=0;
+Console.Write("Ingrese la primera palabra: ");
+palabra_1= Console.ReadLine();
+Console.Write("Ingrese la segunda palabra: ");
+palabra_2= Console.ReadLine();
+if (palabra_1.Length != palabra_2.Length)
+{
+    iguales=false;
+}
+else 
+{
+    while (iguales && i<= palabra_1.Length)
+    {
+        if (palabra_1[i]!=palabra_2[palabra_2.Length-i])
+        {
+            iguales=false;
+        }
+    }
+}
+if (iguales==true){
+    Console.WriteLine("son simétricas :)");
+}
+else Console.WriteLine("son asimétricas :p");
