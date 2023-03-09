@@ -105,6 +105,7 @@ Console.WriteLine("100".Length);
 /*
 EJ 8: Sea st una variable de tipo string correctamente declarada. ¿Es válida la siguiente instrucción:
 Console.WriteLine(st=Console.ReadLine());?
-*/
+
 string st;
 Console.WriteLine(st=Console.ReadLine());
+*/
