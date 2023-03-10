@@ -114,7 +114,7 @@ EJ 9: Escribir un programa que lea dos palabras separadas por un blanco que term
 y determinar si son simétricas (Ej: 'abbccd' y 'dccbba' son simétricas).
 Tip: si st es un string, entonces st[0] devuelve el primer carácter de st, y st[st.Length-1]
 devuelve el último carácter de st.
-*/
+
 String palabra_1;
 String palabra_2;
 bool iguales= true;
@@ -129,15 +129,123 @@ if (palabra_1.Length != palabra_2.Length)
 }
 else 
 {
-    while (iguales && i<= palabra_1.Length)
+    while (iguales && i< palabra_1.Length)
     {
-        if (palabra_1[i]!=palabra_2[palabra_2.Length-i])
+        if (palabra_1[i]!=palabra_2[palabra_2.Length-i-1])
         {
             iguales=false;
         }
+        i++;
     }
 }
 if (iguales==true){
     Console.WriteLine("son simétricas :)");
 }
 else Console.WriteLine("son asimétricas :p");
+*/
+/* 
+EJ 10: Escribir un programa que imprima en la consola todos los números que sean múltiplos de 17 o
+de 29 comprendidos entre 1 y 1000
+
+for (int i=1; i<=1000; i++){
+    if (i%17==0 || i%29==0 )
+        Console.WriteLine(i);
+}
+*/
+/*
+EJ 11:  Comprobar el funcionamiento del siguiente fragmento de código, analizar el resultado y
+contestar las preguntas
+onsole.WriteLine("10/3 = " + 10 / 3);----------- 3
+Console.WriteLine("10.0/3 = " + 10.0 / 3);------------3,33
+Console.WriteLine("10/3.0 = " + 10 / 3.0);------------3,33
+int a = 10, b = 3;
+Console.WriteLine("Si a y b son variables enteras, si a=10 y b=3");
+Console.WriteLine("entonces a/b = " + a / b);
+double c = 3;
+Console.WriteLine("Si c es una variable double, c=3");
+Console.WriteLine("entonces a/c = " + a / c);------------3,33
+¿Qué se puede concluir respecto del operador de división “/” ?
+si hay enteros el resultado es entero, se adapta
+¿Cómo funciona el operador + entre un string y un dato numérico?
+imprime la string seguida del número
+*/
+/*
+EJ 12: Escribir un programa que imprima todos los divisores de un número entero ingresado desde la
+consola. Para obtener el entero desde un string st utilizar int.Parse(st).
+
+String sNum;
+int num;
+Console.WriteLine("Ingresa un numerito: ");
+sNum= Console.ReadLine();
+num= int.Parse(sNum);
+for (int i= num; i>=0; i--){
+    if (num%i==0)
+        Console.WriteLine(i);
+}
+*/
+/*
+EJ 13: Escribir un programa que calcule la suma de dos números reales introducidos por teclado y
+muestre el resultado en la consola (utilizar double.Parse(st) para obtener el valor double a
+partir del string st.
+
+String num1;
+String num2;
+Console.Write("Ingrese el primer número: ");
+num1= Console.ReadLine();
+Console.Write("Ingrese el segundo número: ");
+num2= Console.ReadLine();
+Console.WriteLine("Suma: " +(double.Parse(num1)+double.Parse(num2)));
+*/
+/*
+EJ 14: Escribir un programa que multiplique por 365 el número entero ingresado por el usuario desde
+la consola. El resultado debe imprimirse en la consola dígito por dígito, separado por un espacio
+comenzando por el dígito menos significativo al más significativo.
+
+int res;
+Console.WriteLine("Ingrese el número a multiplicar: ");
+string Snum= Console.ReadLine();
+res = int.Parse(Snum) * 365;
+while (res!=0){
+    Console.Write(res%10+" ");
+    res = res/10;
+}
+*/
+/*
+EJ 15: Escribir un programa que solicite un año por pantalla y diga si es bisiesto. Un año es bisiesto si
+es divisible por 4 pero no por 100. Si es divisible por 100, para ser bisiesto debe ser divisible
+por 400
+
+bool biciestio =false;
+Console.WriteLine("Ingrese un año: ");
+string Sanio= Console.ReadLine();
+int anio = int.Parse(Sanio);
+if (anio%100==0)
+{
+    if (anio%400==0)
+        biciestio=true;
+}
+else if (anio%4==0)
+    biciestio=true;
+if (biciestio) 
+    Console.WriteLine("Biciesto :)");
+else 
+    Console.WriteLine("Bicieston´t :)");
+*/
+/*
+EJ 16: Si a y b son variables enteras, identificar el problema (y la forma de resolverlo) de la siguiente
+expresión (tip: observar qué pasa cuando b = 0):
+if ((b != 0) & (a/b > 5)) Console.WriteLine(a/b);
+& evalua ambas aunque la 1ra sea falsa, && evalua la primera y si es falsa corta ahí
+por eso, al ejecutar da error ya que intenta checkear la segunda división y así dividir por 0.
+*/
+/*
+Utilizar el operador ternario condicional para establecer el contenido de una variable entera con
+el menor valor de otras dos variables enteras.
+*/
+
+int var1=6;
+int var2=3;
+int min= var1<var2 ? var1 : var2;
+Console.WriteLine(min);
+
+Console.WriteLine(var2*=7);
