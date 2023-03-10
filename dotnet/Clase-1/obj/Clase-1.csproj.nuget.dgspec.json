@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Capi\\Desktop\\Facultad\\tercerCuatri\\dotnet\\Clase-1\\Clase-1.csproj": {}
+    "C:\\Users\\Capi\\Desktop\\Facultad\\Tercer-cuatri\\dotnet\\Clase-1\\Clase-1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Capi\\Desktop\\Facultad\\tercerCuatri\\dotnet\\Clase-1\\Clase-1.csproj": {
+    "C:\\Users\\Capi\\Desktop\\Facultad\\Tercer-cuatri\\dotnet\\Clase-1\\Clase-1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Capi\\Desktop\\Facultad\\tercerCuatri\\dotnet\\Clase-1\\Clase-1.csproj",
+        "projectUniqueName": "C:\\Users\\Capi\\Desktop\\Facultad\\Tercer-cuatri\\dotnet\\Clase-1\\Clase-1.csproj",
         "projectName": "Clase-1",
-        "projectPath": "C:\\Users\\Capi\\Desktop\\Facultad\\tercerCuatri\\dotnet\\Clase-1\\Clase-1.csproj",
+        "projectPath": "C:\\Users\\Capi\\Desktop\\Facultad\\Tercer-cuatri\\dotnet\\Clase-1\\Clase-1.csproj",
         "packagesPath": "C:\\Users\\Capi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Capi\\Desktop\\Facultad\\tercerCuatri\\dotnet\\Clase-1\\obj\\",
+        "outputPath": "C:\\Users\\Capi\\Desktop\\Facultad\\Tercer-cuatri\\dotnet\\Clase-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Capi\\AppData\\Roaming\\NuGet\\NuGet.Config"
