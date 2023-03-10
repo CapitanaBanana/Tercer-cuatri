@@ -239,13 +239,42 @@ if ((b != 0) & (a/b > 5)) Console.WriteLine(a/b);
 por eso, al ejecutar da error ya que intenta checkear la segunda división y así dividir por 0.
 */
 /*
-Utilizar el operador ternario condicional para establecer el contenido de una variable entera con
+EJ 17: Utilizar el operador ternario condicional para establecer el contenido de una variable entera con
 el menor valor de otras dos variables enteras.
-*/
 
 int var1=6;
 int var2=3;
 int min= var1<var2 ? var1 : var2;
 Console.WriteLine(min);
+*/
+/*
+EJ 18:¿Cuál es la salida por consola del siguiente código?
 
-Console.WriteLine(var2*=7);
+for (int i = 0; i <= 4; i++)
+{
+string st = i < 3 ? i == 2 ? "dos" : i == 1 ? "uno" : "< 1" : i < 4 ? "tres" : "> 3";
+Console.WriteLine(st);
+}
+*/
+/*
+EJ 20: ¿Cuál es el problema del código siguiente y cómo se soluciona?
+int numero = ;
+for (int i = 1; i <= 10;)
+{
+Console.WriteLine(i++);
+}
+*/
+/*
+EJ 21: Analizar el siguiente código. ¿Cuál es la salida por consola?
+*/
+int i = 1;
+if (i-- == 0)
+{
+Console.WriteLine("cero");
+}
+Console.WriteLine(i);
+if (i++ == 0)
+{
+Console.WriteLine("cero");
+}
+Console.WriteLine(i);
